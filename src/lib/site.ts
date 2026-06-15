@@ -13,7 +13,7 @@ export const site = {
     "Pixel-perfect Shopify builds, Figma to Shopify, React / Next.js and white-label frontend for agencies.",
 
   // Contact
-  email: "mizan.webservice@gmail.com",
+  email: "Mizans.devs@gmail.com",
   // International format, digits only after the country code, no "+" or spaces — used in wa.me links
   whatsappNumber: "8801639608350",
   whatsappMessage: "Hi! I found your portfolio and I'd like to discuss a project.",

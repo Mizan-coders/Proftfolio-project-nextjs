@@ -35,7 +35,7 @@ export function ContactSection() {
   ];
 
   return (
-    <section id="contact" className="mx-auto max-w-6xl px-6 py-20 lg:py-28">
+    <section id="contact" className="mx-auto max-w-7xl px-6 py-20 lg:py-28">
       <SectionHeading
         label="Final CTA"
         title={
