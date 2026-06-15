@@ -1,26 +1,113 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --font-heading: var(--font-sans);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 16px);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --shadow-glow: 0 0 20px hsl(177 91% 52% / 0.35);
+  --shadow-glow-sm: 0 0 10px hsl(177 91% 52% / 0.2);
+  --shadow-glow-lg: 0 0 45px hsl(177 91% 52% / 0.18);
+
+  --animate-fade-in-up: fade-in-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-fade-in: fade-in 0.7s ease both;
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Dark-mode only palette (PRD design tokens) */
+:root {
+  --background: hsl(222 47% 8%);
+  --foreground: hsl(210 40% 98%);
+  --card: hsl(222 45% 10%);
+  --card-foreground: hsl(210 40% 98%);
+  --popover: hsl(222 45% 10%);
+  --popover-foreground: hsl(210 40% 98%);
+  --primary: hsl(177 91% 52%);
+  --primary-foreground: hsl(222 47.4% 11.2%);
+  --secondary: hsl(222 32% 15%);
+  --secondary-foreground: hsl(210 40% 98%);
+  --muted: hsl(222 32% 15%);
+  --muted-foreground: hsl(215 20% 55%);
+  --accent: hsl(177 70% 25%);
+  --accent-foreground: hsl(210 40% 98%);
+  --destructive: hsl(0 72% 51%);
+  --border: hsl(222 32% 20%);
+  --input: hsl(222 32% 18%);
+  --ring: hsl(177 91% 52%);
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  /* Offset for sticky navbar when jumping to #section anchors */
+  section[id] {
+    scroll-margin-top: 6rem;
+  }
+}
+
+@layer components {
+  /* Shared card hover — matches the reference's .portfolio-card */
+  .portfolio-card {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .portfolio-card:hover {
+    border-color: color-mix(in oklab, var(--primary) 20%, transparent);
+    box-shadow: var(--shadow-glow);
+  }
 }
