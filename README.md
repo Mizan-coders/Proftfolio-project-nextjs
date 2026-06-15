@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mizanur Rahman — Developer Portfolio
 
-## Getting Started
+A premium, dark-themed developer portfolio for a full-stack & Shopify specialist —
+built to communicate trust and convert agency/brand visitors into inbound leads
+via a contact form and WhatsApp.
 
-First, run the development server:
+🔗 **Live:** _add your Vercel URL here_
+
+---
+
+## ✨ Features
+
+- **Single-page site** with Hero, About, Services, Why-Me (process), Case Studies,
+  Social Proof (testimonials carousel), flagship SaaS CTA, FAQ and Contact sections
+- **Sub-pages:** expanded `/about` and dynamic `/services/[slug]` detail pages
+- **Working contact form** — `react-hook-form` validation + email delivery via Resend
+- **Dark, teal-accented design system** with glow effects and scroll-reveal animations
+- **Fully responsive**, accessible, and SEO-ready (OpenGraph metadata)
+- **Single source of truth** for personal details in [`src/lib/site.ts`](src/lib/site.ts)
+
+## 🧱 Tech Stack
+
+| Layer       | Choice                          |
+| ----------- | ------------------------------- |
+| Framework   | Next.js 16 (App Router)         |
+| Language    | TypeScript                      |
+| Styling     | Tailwind CSS v4                 |
+| Components  | shadcn/ui (Base UI)             |
+| Email       | Resend                          |
+| Forms       | react-hook-form                 |
+| Carousel    | Embla Carousel                  |
+| Icons       | Lucide React                    |
+| Deployment  | Vercel                          |
+
+## 🚀 Getting Started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3005](http://localhost:3005) (this project runs on port **3005**).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Environment variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Copy [`.env.example`](.env.example) to `.env.local` and fill in:
 
-## Learn More
+```bash
+RESEND_API_KEY=re_your_key_here      # https://resend.com (free: 3,000 emails/month)
+CONTACT_EMAIL=you@example.com         # where contact-form submissions are delivered
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Customizing
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Personal details** (name, contact, socials, stats): [`src/lib/site.ts`](src/lib/site.ts)
+- **Services**: [`src/lib/services.ts`](src/lib/services.ts) and detail pages [`src/lib/service-details.ts`](src/lib/service-details.ts)
+- **Case studies**: [`src/lib/projects.ts`](src/lib/projects.ts) (drop screenshots in `public/`)
+- **Reviews**: [`src/lib/reviews.ts`](src/lib/reviews.ts)
+- **Profile photo**: `public/Mizan-ph.jpg` (path set via `site.profileImage`)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Scripts
 
-## Deploy on Vercel
+| Command         | Description                          |
+| --------------- | ------------------------------------ |
+| `npm run dev`   | Start dev server (port 3005)         |
+| `npm run build` | Production build                     |
+| `npm start`     | Run the production build (port 3005) |
+| `npm run lint`  | Run ESLint                           |
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ☁️ Deploy on Vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Import this repo at [vercel.com/new](https://vercel.com/new)
+2. Add the `RESEND_API_KEY` and `CONTACT_EMAIL` environment variables
+3. Deploy — every push to `main` auto-deploys
+
+> **Note:** The contact API uses Resend's sandbox sender (`onboarding@resend.dev`) by
+> default, which reliably delivers only to your own Resend account email. For
+> production, verify a domain in Resend and update the `from:` address in
+> [`src/app/api/contact/route.ts`](src/app/api/contact/route.ts).
