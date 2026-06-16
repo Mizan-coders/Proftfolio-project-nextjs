@@ -20,7 +20,7 @@ const C = ({ children }: { children: React.ReactNode }) => (
 
 export function CodeBlock() {
   return (
-    <div className="font-mono text-sm">
+    <div className="min-w-0 font-mono text-sm">
       {/* chrome */}
       <div className="flex items-center justify-between px-1 pb-4">
         <div className="flex items-center gap-2">

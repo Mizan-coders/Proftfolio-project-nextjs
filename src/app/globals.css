@@ -93,7 +93,7 @@
     color-scheme: dark;
   }
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply overflow-x-hidden bg-background text-foreground antialiased;
   }
   /* Offset for sticky navbar when jumping to #section anchors */
   section[id] {

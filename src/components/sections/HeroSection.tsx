@@ -51,7 +51,7 @@ export function HeroSection() {
 
       <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_1fr]">
         {/* LEFT */}
-        <div className="animate-fade-in-up space-y-7">
+        <div className="min-w-0 animate-fade-in-up space-y-7">
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3.5 py-1.5 text-sm font-medium text-primary">
             <CheckCircle2 className="size-4" />
             Senior Shopify Developer · CRO Expert · 10+ Years
@@ -128,8 +128,8 @@ export function HeroSection() {
         </div>
 
         {/* RIGHT — single "delivery overview" window */}
-        <div className="lg:animate-fade-in">
-          <div className="rounded-3xl border border-primary/20 bg-[#0d1117] p-4 shadow-glow-lg sm:p-6">
+        <div className="min-w-0 lg:animate-fade-in">
+          <div className="min-w-0 rounded-3xl border border-primary/20 bg-[#0d1117] p-4 shadow-glow-lg sm:p-6">
             <CodeBlock />
 
             {/* Feature cards — stacked */}
