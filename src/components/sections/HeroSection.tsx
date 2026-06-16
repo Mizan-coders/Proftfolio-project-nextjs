@@ -41,7 +41,7 @@ export function HeroSection() {
   return (
     <section
       id="home"
-      className="relative mx-auto flex min-h-screen max-w-360 flex-col justify-center overflow-hidden px-6 pb-16 pt-28 lg:pt-32"
+      className="relative mx-auto flex max-w-360 flex-col overflow-hidden px-6 pb-16 pt-24 lg:min-h-screen lg:justify-center lg:pt-32"
     >
       {/* ambient glow */}
       <div
