@@ -23,17 +23,17 @@ const featureCards = [
   {
     icon: Hammer,
     title: "Build Scope",
-    desc: "Shopify themes, Figma conversions, migrations and custom frontend.",
+    desc: "Shopify Plus themes, CRO experiments, funnel optimization and custom apps.",
   },
   {
     icon: Workflow,
     title: "Working Style",
-    desc: "White-label, async-friendly, and slotted neatly into your process.",
+    desc: "Data-driven and AI-assisted, focused on revenue per session.",
   },
   {
     icon: Trophy,
     title: "Outcome",
-    desc: "Fast, responsive stores your clients and customers actually love.",
+    desc: "Higher conversion rates, AOV and retention for D2C brands.",
   },
 ];
 
@@ -54,19 +54,20 @@ export function HeroSection() {
         <div className="animate-fade-in-up space-y-7">
           <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3.5 py-1.5 text-sm font-medium text-primary">
             <CheckCircle2 className="size-4" />
-            Full-Stack Developer · Shopify Expert · SaaS Builder
+            Senior Shopify Developer · CRO Expert · 10+ Years
           </span>
 
           <h1 className="text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-7xl">
-            Full-Stack Shopify &amp; Web Development
+            Conversion-Focused Shopify Development
             <span className="mt-1 block text-primary">
-              for Agencies, Brands &amp; B2B Growth
+              for D2C Brands That Want More Revenue
             </span>
           </h1>
 
           <p className="max-w-xl text-base leading-relaxed text-muted-foreground">
-            I turn approved designs into premium, production-ready builds — pixel-perfect
-            Shopify stores, Figma conversions and modern web experiences.{" "}
+            I help D2C brands turn traffic into revenue — high-converting Shopify &amp;
+            Shopify Plus stores, A/B testing, funnel optimization and AI-assisted
+            development.{" "}
             <Link href="/about" className="text-primary hover:underline">
               Know more about how I work
             </Link>
@@ -75,9 +76,9 @@ export function HeroSection() {
 
           {/* Stat cards */}
           <div className="grid grid-cols-3 gap-3">
-            <StatCard value={site.stats.projects} label="Projects delivered" />
-            <StatCard value={site.stats.shopifyStores} label="Shopify stores" />
-            <StatCard value={site.stats.experience} label="Agency-ready workflow" />
+            <StatCard value={site.stats.experience} label="Experience" />
+            <StatCard value={site.stats.brands} label="D2C brands served" />
+            <StatCard value={site.stats.conversion} label="Avg. conversion lift" />
           </div>
 
           {/* CTAs */}
@@ -154,8 +155,7 @@ export function HeroSection() {
                 Solo specialist. Agency-level execution.
               </span>{" "}
               <span className="text-foreground/90">
-                Send your Figma file or project brief and I&apos;ll reply with next
-                steps.
+                Send your store URL or brief and I&apos;ll reply with next steps.
               </span>
             </div>
           </div>

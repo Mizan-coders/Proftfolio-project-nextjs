@@ -7,10 +7,10 @@
 export const site = {
   name: "Mizanur Rahman",
   firstName: "Mizan",
-  role: "Full-Stack Developer & Shopify Expert",
+  role: "Sr. Full-Stack Shopify Developer & CRO Expert",
   profileImage: "/project/Mizan-ph.jpg",
   tagline:
-    "Pixel-perfect Shopify builds, Figma to Shopify, React / Next.js and white-label frontend for agencies.",
+    "Senior Shopify Plus & CRO developer helping D2C brands lift conversion with A/B testing, funnel optimization and performance-first, AI-assisted ecommerce engineering.",
 
   // Contact
   email: "Mizans.devs@gmail.com",
@@ -30,12 +30,12 @@ export const site = {
   // Deployment URL (used for SEO / OpenGraph)
   url: "https://mizandevs.vercel.app",
 
-  // Headline stats
+  // Headline stats (sourced from CV)
   stats: {
-    projects: "350+",
-    shopifyStores: "300+",
-    wordpressBuilds: "50+",
-    experience: "5+ yrs",
+    experience: "10+ yrs",
+    brands: "100+",
+    conversion: "30%+",
+    shopifyPlus: "Shopify Plus",
     responseWindow: "24h",
   },
 } as const;

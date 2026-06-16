@@ -45,7 +45,7 @@ export function CodeBlock() {
           {"\n"}
           <span>
             {"  "}
-            <K>title</K>: <S>&quot;Full-Stack &amp; Shopify Developer&quot;</S>,
+            <K>title</K>: <S>&quot;Sr. Shopify &amp; CRO Developer&quot;</S>,
           </span>
           {"\n"}
           <span>
@@ -55,12 +55,12 @@ export function CodeBlock() {
           {"\n"}
           <span>
             {"    "}
-            <S>&quot;Figma → Shopify&quot;</S>, <S>&quot;Custom Themes&quot;</S>,
+            <S>&quot;Shopify Plus&quot;</S>, <S>&quot;CRO &amp; A/B testing&quot;</S>,
           </span>
           {"\n"}
           <span>
             {"    "}
-            <S>&quot;Migrations&quot;</S>, <S>&quot;React / Next.js&quot;</S>,
+            <S>&quot;Funnel optimization&quot;</S>, <S>&quot;Subscriptions&quot;</S>,
           </span>
           {"\n"}
           <span>
@@ -70,7 +70,7 @@ export function CodeBlock() {
           {"\n"}
           <span>
             {"  "}
-            <K>workflow</K>: <S>&quot;white-label, agency-ready&quot;</S>,
+            <K>experience</K>: <S>&quot;10+ years, 100+ D2C brands&quot;</S>,
           </span>
           {"\n"}
           <span>

@@ -1,10 +1,10 @@
 import {
-  Handshake,
-  Code2,
-  Smartphone,
-  MessageSquare,
-  ShoppingCart,
-  Layers,
+  TrendingUp,
+  FlaskConical,
+  Store,
+  Gauge,
+  BarChart3,
+  Sparkles,
   type LucideIcon,
 } from "lucide-react";
 import Image from "next/image";
@@ -12,42 +12,42 @@ import { Reveal } from "@/components/ui/Reveal";
 import { site } from "@/lib/site";
 
 const stats = [
-  { value: site.stats.projects, label: "Projects" },
-  { value: site.stats.shopifyStores, label: "Shopify stores" },
-  { value: site.stats.wordpressBuilds, label: "WordPress builds" },
+  { value: site.stats.brands, label: "D2C brands served" },
+  { value: site.stats.conversion, label: "Avg. conversion lift" },
+  { value: site.stats.experience, label: "Experience" },
   { value: site.stats.responseWindow, label: "Response window" },
 ];
 
 const features: { icon: LucideIcon; title: string; desc: string }[] = [
   {
-    icon: Handshake,
-    title: "White-label collaboration",
-    desc: "I plug into agency workflows without adding delivery friction or client-facing confusion.",
+    icon: TrendingUp,
+    title: "Conversion-focused development",
+    desc: "Every build is shaped around CRO — turning more of your existing traffic into revenue.",
   },
   {
-    icon: Code2,
-    title: "Clean, scalable code",
-    desc: "Builds are organized for maintainability, future iteration, and easier developer handoff.",
+    icon: FlaskConical,
+    title: "A/B testing & experimentation",
+    desc: "Hypotheses run through Shoplift, VWO, Optimizely and Intelligems for data-backed wins.",
   },
   {
-    icon: Smartphone,
-    title: "Mobile-first implementation",
-    desc: "Layouts are translated carefully across breakpoints so design quality holds on real devices.",
+    icon: Store,
+    title: "Shopify Plus & Liquid expertise",
+    desc: "Custom themes, checkout customization, upsell flows and subscription logic at scale.",
   },
   {
-    icon: MessageSquare,
-    title: "Responsive communication",
-    desc: "Fast updates, low-friction collaboration, and clear scoping help teams move without blockers.",
+    icon: Gauge,
+    title: "Performance & Core Web Vitals",
+    desc: "Speed-first engineering — lazy loading, asset minification and clean, fast page loads.",
   },
   {
-    icon: ShoppingCart,
-    title: "Ecommerce delivery focus",
-    desc: "Shopify builds are shaped around storefront UX, merchandising flexibility, and launch speed.",
+    icon: BarChart3,
+    title: "Analytics integrity",
+    desc: "GA4, GTM and server-side tracking set up for accurate attribution and reporting.",
   },
   {
-    icon: Layers,
-    title: "Cross-platform execution",
-    desc: "Support spans Shopify, WordPress, Webflow, React, and Next.js when the project needs more than one stack.",
+    icon: Sparkles,
+    title: "AI-assisted workflows",
+    desc: "Claude Code, Cursor and prompt engineering to ship full-funnel improvements faster.",
   },
 ];
 
@@ -74,21 +74,22 @@ export function AboutSection() {
             <h2 className="text-2xl font-bold leading-snug sm:text-3xl">
               I&apos;m {site.name},{" "}
               <span className="text-primary">
-                a Full-Stack Developer &amp; Shopify Expert.
+                a Senior Shopify Developer &amp; CRO Expert.
               </span>
             </h2>
           </div>
 
           <div className="clear-both mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
             <p>
-              For over five years I&apos;ve helped agencies and ecommerce brands turn
-              designs into fast, reliable storefronts — from Figma-to-Shopify builds
-              and migrations to custom React and Next.js frontends.
+              For 10+ years I&apos;ve helped D2C brands build high-converting Shopify
+              and Shopify Plus experiences — owning everything from theme development
+              and AI-assisted workflows to A/B testing, funnel optimization and
+              post-purchase upsells.
             </p>
             <p>
-              I work white-label, communicate clearly, and obsess over the details
-              that make a build feel premium. You get a dependable delivery partner,
-              not just another freelancer.
+              I&apos;m a CRO-focused engineer: I turn conversion hypotheses into clean,
+              scalable, well-documented code, and I obsess over analytics integrity,
+              site speed and the details that lift revenue per session.
             </p>
           </div>
 
