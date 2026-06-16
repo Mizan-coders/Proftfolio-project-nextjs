@@ -28,7 +28,7 @@ export const site = {
   },
 
   // Deployment URL (used for SEO / OpenGraph)
-  url: "https://yoursite.vercel.app", // TODO
+  url: "https://mizandevs.vercel.app",
 
   // Headline stats
   stats: {
