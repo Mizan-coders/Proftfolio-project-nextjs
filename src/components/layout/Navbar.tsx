@@ -141,7 +141,7 @@ export function Navbar() {
             type="button"
             aria-label="Toggle menu"
             onClick={() => setMobileOpen((v) => !v)}
-            className="ml-1 grid size-9 shrink-0 place-items-center rounded-full border border-border text-foreground lg:hidden"
+            className="grid size-9 shrink-0 place-items-center rounded-full text-foreground lg:hidden"
           >
             {mobileOpen ? <X className="size-4" /> : <Menu className="size-4" />}
           </button>
