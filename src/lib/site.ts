@@ -10,7 +10,7 @@ export const site = {
   role: "Sr. Full-Stack Shopify Developer & CRO Expert",
   profileImage: "/project/Mizan-ph.jpg",
   tagline:
-    "Senior Shopify Plus & CRO developer helping D2C brands lift conversion with A/B testing, funnel optimization and performance-first, AI-assisted ecommerce engineering.",
+    "Senior Shopify Plus & CRO developer helping agencies and D2C brands lift conversion with A/B testing, funnel optimization and dependable white-label ecommerce engineering.",
 
   // Contact
   email: "Mizans.devs@gmail.com",

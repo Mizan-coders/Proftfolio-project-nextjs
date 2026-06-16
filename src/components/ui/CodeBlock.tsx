@@ -70,7 +70,7 @@ export function CodeBlock() {
           {"\n"}
           <span>
             {"  "}
-            <K>experience</K>: <S>&quot;10+ years, 100+ D2C brands&quot;</S>,
+            <K>clients</K>: <S>&quot;agencies &amp; D2C brands&quot;</S>, <C>{"// white-label"}</C>
           </span>
           {"\n"}
           <span>

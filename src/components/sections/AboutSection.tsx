@@ -81,15 +81,16 @@ export function AboutSection() {
 
           <div className="clear-both mt-4 space-y-4 text-base leading-relaxed text-muted-foreground">
             <p>
-              For 10+ years I&apos;ve helped D2C brands build high-converting Shopify
-              and Shopify Plus experiences — owning everything from theme development
-              and AI-assisted workflows to A/B testing, funnel optimization and
-              post-purchase upsells.
+              For 10+ years I&apos;ve helped agencies and D2C brands build
+              high-converting Shopify and Shopify Plus experiences — owning everything
+              from theme development and AI-assisted workflows to A/B testing, funnel
+              optimization and post-purchase upsells.
             </p>
             <p>
-              I&apos;m a CRO-focused engineer: I turn conversion hypotheses into clean,
-              scalable, well-documented code, and I obsess over analytics integrity,
-              site speed and the details that lift revenue per session.
+              I&apos;m a CRO-focused engineer who works white-label as a dependable
+              delivery partner — turning conversion hypotheses into clean, scalable
+              code while obsessing over analytics integrity, site speed and revenue per
+              session.
             </p>
           </div>
 

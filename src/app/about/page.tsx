@@ -119,10 +119,10 @@ export default function AboutPage() {
       <div className="mt-8 space-y-4 text-lg leading-relaxed text-muted-foreground">
         <p>
           I&apos;m a Senior Shopify Developer and technical CRO specialist with 10+
-          years building high-converting Shopify and Shopify Plus experiences for D2C
-          brands. I specialize in AI-assisted development workflows, conversion
-          systems, experimentation frameworks and performance-first ecommerce
-          architecture.
+          years building high-converting Shopify and Shopify Plus experiences for
+          agencies and D2C brands. I specialize in AI-assisted development workflows,
+          conversion systems, experimentation frameworks and performance-first
+          ecommerce architecture.
         </p>
         <p>
           I&apos;ve driven 30%+ conversion lifts across 100+ ecommerce brands through

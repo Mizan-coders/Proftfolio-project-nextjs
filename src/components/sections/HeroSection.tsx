@@ -60,14 +60,14 @@ export function HeroSection() {
           <h1 className="text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-7xl">
             Conversion-Focused Shopify Development
             <span className="mt-1 block text-primary">
-              for D2C Brands That Want More Revenue
+              for Agencies, Brands &amp; D2C Growth
             </span>
           </h1>
 
           <p className="max-w-xl text-base leading-relaxed text-muted-foreground">
-            I help D2C brands turn traffic into revenue — high-converting Shopify &amp;
-            Shopify Plus stores, A/B testing, funnel optimization and AI-assisted
-            development.{" "}
+            I help agencies and D2C brands turn traffic into revenue — high-converting
+            Shopify &amp; Shopify Plus builds, A/B testing, funnel optimization and
+            dependable white-label delivery.{" "}
             <Link href="/about" className="text-primary hover:underline">
               Know more about how I work
             </Link>
