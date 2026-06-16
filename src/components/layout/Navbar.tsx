@@ -62,8 +62,8 @@ export function Navbar() {
         ))}
       </div>
 
-      {/* Floating pill navbar — content width, centered */}
-      <header className="fixed left-1/2 top-4 z-50 flex max-w-[calc(100vw-1.5rem)] -translate-x-1/2 flex-col items-center">
+      {/* Floating pill navbar — right-aligned on mobile, centered on desktop */}
+      <header className="fixed right-6 top-4 z-50 flex max-w-[calc(100vw-3rem)] flex-col items-end lg:left-1/2 lg:right-auto lg:max-w-[calc(100vw-1.5rem)] lg:-translate-x-1/2 lg:items-center">
         <nav className="flex w-auto items-center gap-1 rounded-full border border-border bg-card/80 px-2.5 py-2 shadow-lg shadow-black/20 backdrop-blur-md">
           {/* Desktop nav */}
           <ul className="hidden items-center gap-0.5 lg:flex">
