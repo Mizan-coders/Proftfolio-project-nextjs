@@ -1,22 +1,22 @@
 import {
   Zap,
   ArrowRight,
-  Globe,
-  Bot,
-  LineChart,
-  BadgeCheck,
+  ShoppingBag,
+  Repeat,
+  TrendingUp,
+  Store,
   type LucideIcon,
 } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 import { whatsappLink } from "@/lib/site";
 
-// TODO: This is the flagship-product showcase. Replace the copy, stats and
-// feature claims below with your own real product details before publishing.
+// Flagship product: "Upsell & Swap Upsell Pro" — a Shopify AOV/upsell app.
+// Headline, description and stats are editable drafts; refine with real copy.
 const features: { icon: LucideIcon; label: string }[] = [
-  { icon: Globe, label: "Dominate 22 countries" },
-  { icon: Bot, label: "Zero-hallucination AI" },
-  { icon: LineChart, label: "Massive SEO scale" },
-  { icon: BadgeCheck, label: "99/100 PageSpeed" },
+  { icon: ShoppingBag, label: "One-click post-purchase upsells" },
+  { icon: Repeat, label: "Smart swap offers" },
+  { icon: TrendingUp, label: "AOV & revenue analytics" },
+  { icon: Store, label: "Built for Shopify & Plus" },
 ];
 
 export function SaaSCTASection() {
@@ -28,20 +28,20 @@ export function SaaSCTASection() {
           <div className="space-y-6">
             <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-primary">
               <Zap className="size-3.5" />
-              Flagship SaaS Solution
+              Flagship Shopify App
             </span>
 
             <h2 className="text-4xl font-bold leading-[1.1] tracking-tight sm:text-5xl">
-              AI-Driven B2B Lead Gen &amp;{" "}
+              Upsell &amp; Swap{" "}
               <span className="bg-linear-to-r from-primary to-blue-500 bg-clip-text text-transparent">
-                Programmatic SEO Engine
+                Upsell Pro
               </span>
             </h2>
 
             <p className="max-w-xl text-base leading-relaxed text-muted-foreground">
-              Stop losing international leads while you sleep. Turn just 10 core
-              products into 16,000+ localized SEO pages paired with an embedded 24/7
-              AI Sales Agent.
+              A Shopify app that lifts average order value with one-click
+              post-purchase upsells and smart swap offers — turning every checkout
+              into a chance to grow revenue.
             </p>
 
             {/* Feature cards */}
@@ -66,12 +66,12 @@ export function SaaSCTASection() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-3 font-medium text-primary-foreground transition-all hover:bg-primary/80 hover:shadow-glow"
               >
-                Explore The Engine
+                Explore the App
                 <ArrowRight className="size-4" />
               </a>
               <div className="text-sm">
-                <p className="font-semibold text-primary">Pilot Program Open</p>
-                <p className="text-muted-foreground">Accepting only ONE manufacturer.</p>
+                <p className="font-semibold text-primary">Early Access Open</p>
+                <p className="text-muted-foreground">Built for growing D2C brands.</p>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@ export function SaaSCTASection() {
                   <span className="size-2.5 rounded-full bg-green-500/90" />
                 </div>
                 <div className="mx-auto rounded-md bg-background/60 px-3 py-1 text-[11px] text-muted-foreground">
-                  dashboard.b2b-growth-engine.com
+                  app.upsell-swap-pro.com
                 </div>
               </div>
 
@@ -161,13 +161,13 @@ export function SaaSCTASection() {
                       />
                     </svg>
 
-                    {/* AI Sales Agent floating card */}
+                    {/* Upsell offer floating card */}
                     <div className="absolute bottom-3 right-3 w-40 rounded-lg border border-primary/30 bg-card/95 p-2.5 shadow-lg backdrop-blur-sm">
                       <div className="flex items-center gap-1.5">
                         <span className="grid size-5 place-items-center rounded-md bg-primary/15 text-primary">
-                          <Bot className="size-3" />
+                          <ShoppingBag className="size-3" />
                         </span>
-                        <span className="text-[11px] font-semibold">AI Sales Agent</span>
+                        <span className="text-[11px] font-semibold">Smart Upsell</span>
                       </div>
                       <div className="mt-2 space-y-1">
                         <div className="h-1.5 w-full rounded bg-muted-foreground/20" />
