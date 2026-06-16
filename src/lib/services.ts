@@ -3,9 +3,8 @@ import {
   Store,
   ArrowLeftRight,
   Layers,
-  PenTool,
   Code2,
-  Mail,
+  Puzzle,
   type LucideIcon,
 } from "lucide-react";
 
@@ -49,8 +48,8 @@ export const services: Service[] = [
   {
     title: "Shopify Store Migration",
     short: "Shopify Migrations",
-    forWho: "For brands moving from WordPress, Wix, Webflow, or custom sites",
-    description: "A smoother migration path into Shopify without losing the structure, content clarity, or brand feel that already works.",
+    forWho: "For brands moving from Magento, OpenCart, WooCommerce, Wix or Squarespace",
+    description: "A smoother migration into Shopify from any platform — preserving your catalog structure, content, SEO and the brand feel that already works.",
     href: "/#contact",
     icon: ArrowLeftRight,
     accent: "350 85% 64%",
@@ -68,12 +67,12 @@ export const services: Service[] = [
     hasPage: true,
   },
   {
-    title: "Figma to WordPress or Webflow",
-    short: "Figma to WordPress / Webflow",
-    forWho: "For design-led teams that need faithful frontend implementation",
-    description: "Production-ready pages and CMS builds that preserve design intent and simplify client handoff.",
+    title: "Shopify Apps Development",
+    short: "Shopify Apps",
+    forWho: "For brands and agencies needing custom Shopify functionality",
+    description: "Custom Shopify apps and extensions — upsells, subscriptions, checkout UI and admin tools built on Shopify's APIs.",
     href: "/#contact",
-    icon: PenTool,
+    icon: Puzzle,
     accent: "262 83% 68%",
     hasPage: false,
   },
@@ -87,16 +86,6 @@ export const services: Service[] = [
     icon: Code2,
     accent: "28 92% 60%",
     hasPage: true,
-  },
-  {
-    title: "HTML Email Development",
-    short: "HTML Emails",
-    forWho: "For ecommerce teams and agencies running campaign-heavy retention programs",
-    description: "Responsive email builds that render cleanly across major clients and stay aligned with brand visuals.",
-    href: "/#contact",
-    icon: Mail,
-    accent: "292 80% 66%",
-    hasPage: false,
   },
 ];
 
