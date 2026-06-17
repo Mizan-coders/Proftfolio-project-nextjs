@@ -88,7 +88,7 @@ export function Navbar() {
             onClick={() => setMobileOpen(false)}
             className="truncate text-center text-sm font-semibold text-primary lg:hidden"
           >
-            Shopify Expert
+            {site.firstName}
           </Link>
 
           {/* Desktop nav */}
