@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X, MessageCircle } from "lucide-react";
 import { Github, Linkedin, Facebook, Behance } from "@/components/ui/BrandIcons";
@@ -62,9 +63,34 @@ export function Navbar() {
         ))}
       </div>
 
-      {/* Floating pill navbar — right-aligned on mobile, centered on desktop */}
-      <header className="fixed right-6 top-4 z-50 flex max-w-[calc(100vw-3rem)] flex-col items-end lg:left-1/2 lg:right-auto lg:max-w-[calc(100vw-1.5rem)] lg:-translate-x-1/2 lg:items-center">
-        <nav className="flex w-auto items-center gap-1 rounded-full border border-border bg-card/80 px-2.5 py-2 shadow-lg shadow-black/20 backdrop-blur-md">
+      {/* Mobile: full-width bar (avatar · title · toggle). Desktop: centered pill. */}
+      <header className="fixed left-1/2 top-4 z-50 flex w-[calc(100vw-2rem)] -translate-x-1/2 flex-col lg:w-auto">
+        <nav className="grid w-full grid-cols-[auto_1fr_auto] items-center gap-2 rounded-full border border-border bg-card/80 px-3 py-2 shadow-lg shadow-black/20 backdrop-blur-md lg:flex lg:w-auto lg:gap-1 lg:px-2.5">
+          {/* Mobile: profile avatar (left) */}
+          <Link
+            href="/#home"
+            aria-label="Home"
+            onClick={() => setMobileOpen(false)}
+            className="relative block size-9 shrink-0 overflow-hidden rounded-full border border-border lg:hidden"
+          >
+            <Image
+              src={site.profileImage}
+              alt={site.name}
+              fill
+              sizes="36px"
+              className="object-cover"
+            />
+          </Link>
+
+          {/* Mobile: title (center) */}
+          <Link
+            href="/#home"
+            onClick={() => setMobileOpen(false)}
+            className="truncate text-center text-sm font-semibold text-primary lg:hidden"
+          >
+            Shopify Expert
+          </Link>
+
           {/* Desktop nav */}
           <ul className="hidden items-center gap-0.5 lg:flex">
             {navItems.map((item) =>
@@ -130,7 +156,7 @@ export function Navbar() {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-1 hidden items-center gap-2 whitespace-nowrap rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/80 hover:shadow-glow sm:flex"
+            className="ml-1 hidden items-center gap-2 whitespace-nowrap rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/80 hover:shadow-glow lg:flex"
           >
             <MessageCircle className="size-4" />
             Let&apos;s Talk
@@ -141,7 +167,7 @@ export function Navbar() {
             type="button"
             aria-label="Toggle menu"
             onClick={() => setMobileOpen((v) => !v)}
-            className="grid size-9 shrink-0 place-items-center rounded-full text-foreground lg:hidden"
+            className="grid size-9 shrink-0 place-items-center justify-self-end rounded-full text-foreground lg:hidden"
           >
             {mobileOpen ? <X className="size-4" /> : <Menu className="size-4" />}
           </button>
@@ -149,7 +175,7 @@ export function Navbar() {
 
         {/* Mobile menu */}
         {mobileOpen && (
-          <div className="mt-2 w-[min(20rem,calc(100vw-1.5rem))] rounded-2xl border border-border bg-card/95 p-3 backdrop-blur-md lg:hidden">
+          <div className="mt-2 w-full rounded-2xl border border-border bg-card/95 p-3 backdrop-blur-md lg:hidden">
             <ul className="flex flex-col gap-1">
               {navItems.map((item) => (
                 <li key={item.label}>
