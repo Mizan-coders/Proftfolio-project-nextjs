@@ -53,7 +53,7 @@ export default function RootLayout({
         <main className="flex-1">{children}</main>
         <Footer />
         <WhatsAppFab />
-        <Toaster position="bottom-right" richColors />
+        <Toaster position="bottom-left" richColors />
       </body>
     </html>
   );
