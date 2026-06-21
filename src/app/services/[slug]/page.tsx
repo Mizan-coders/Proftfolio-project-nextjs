@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { Check, ArrowRight, MessageCircle, ArrowLeft } from "lucide-react";
+import { Check, ArrowRight, ArrowLeft } from "lucide-react";
+import { Whatsapp } from "@/components/ui/BrandIcons";
 import { serviceDetails } from "@/lib/service-details";
 import { site, whatsappLink } from "@/lib/site";
 
@@ -60,7 +61,7 @@ export default async function ServicePage({
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-medium text-primary-foreground transition-all hover:bg-primary/80 hover:shadow-glow"
           >
-            <MessageCircle className="size-4" />
+            <Whatsapp className="size-4" />
             Discuss your project
           </a>
           <Link

@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import { ArrowRight, ArrowLeft, MessageCircle } from "lucide-react";
+import { ArrowRight, ArrowLeft } from "lucide-react";
+import { Whatsapp } from "@/components/ui/BrandIcons";
 import { StatCard } from "@/components/ui/StatCard";
 import { Hl } from "@/components/ui/SectionHeading";
 import { site, whatsappLink } from "@/lib/site";
@@ -221,7 +222,7 @@ export default function AboutPage() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-medium text-primary-foreground transition-all hover:bg-primary/80 hover:shadow-glow"
           >
-            <MessageCircle className="size-4" />
+            <Whatsapp className="size-4" />
             WhatsApp Me
           </a>
           <Link

@@ -4,8 +4,8 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { ChevronDown, Menu, X, MessageCircle } from "lucide-react";
-import { Github, Linkedin, Facebook, Behance } from "@/components/ui/BrandIcons";
+import { ChevronDown, Menu, X } from "lucide-react";
+import { Github, Linkedin, Facebook, Behance, Whatsapp } from "@/components/ui/BrandIcons";
 import { cn } from "@/lib/utils";
 import { navItems } from "@/lib/nav";
 import { services } from "@/lib/services";
@@ -158,7 +158,7 @@ export function Navbar() {
             rel="noopener noreferrer"
             className="ml-1 hidden items-center gap-2 whitespace-nowrap rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-all hover:bg-primary/80 hover:shadow-glow lg:flex"
           >
-            <MessageCircle className="size-4" />
+            <Whatsapp className="size-4" />
             Let&apos;s Talk
           </a>
 
@@ -216,7 +216,7 @@ export function Navbar() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground"
               >
-                <MessageCircle className="size-4" />
+                <Whatsapp className="size-4" />
                 WhatsApp
               </a>
             </div>

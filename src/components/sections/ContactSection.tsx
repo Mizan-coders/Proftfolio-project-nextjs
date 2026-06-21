@@ -1,5 +1,5 @@
-import { Mail, MessageCircle, MapPin, MessageSquare } from "lucide-react";
-import { Github, Linkedin, Facebook, Behance } from "@/components/ui/BrandIcons";
+import { Mail, MapPin, MessageSquare } from "lucide-react";
+import { Github, Linkedin, Facebook, Behance, Whatsapp } from "@/components/ui/BrandIcons";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading, Hl } from "@/components/ui/SectionHeading";
 import { ContactForm } from "@/components/ui/ContactForm";
@@ -21,7 +21,7 @@ export function ContactSection() {
       href: `mailto:${site.email}`,
     },
     {
-      Icon: MessageCircle,
+      Icon: Whatsapp,
       label: "WhatsApp",
       value: `+${site.whatsappNumber}`,
       href: whatsappLink,

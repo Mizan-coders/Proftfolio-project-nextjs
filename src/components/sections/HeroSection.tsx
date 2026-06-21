@@ -1,6 +1,5 @@
 import Link from "next/link";
 import {
-  MessageCircle,
   Star,
   Hammer,
   Workflow,
@@ -8,6 +7,7 @@ import {
   CheckCircle2,
   UserRound,
 } from "lucide-react";
+import { Whatsapp } from "@/components/ui/BrandIcons";
 import { CodeBlock } from "@/components/ui/CodeBlock";
 import { StatCard } from "@/components/ui/StatCard";
 import { site, whatsappLink } from "@/lib/site";
@@ -89,7 +89,7 @@ export function HeroSection() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 font-medium text-primary-foreground transition-all hover:bg-primary/80 hover:shadow-glow"
             >
-              <MessageCircle className="size-5" />
+              <Whatsapp className="size-5" />
               WhatsApp Me Now
             </a>
             <Link

@@ -1,8 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { MessageCircle, ArrowUp } from "lucide-react";
-import { Github, Linkedin, Facebook, Behance } from "@/components/ui/BrandIcons";
+import { ArrowUp } from "lucide-react";
+import { Github, Linkedin, Facebook, Behance, Whatsapp } from "@/components/ui/BrandIcons";
 import { footerNav } from "@/lib/nav";
 import { site, whatsappLink } from "@/lib/site";
 
@@ -11,7 +11,7 @@ const socials = [
   { label: "LinkedIn", href: site.socials.linkedin, Icon: Linkedin },
   { label: "Facebook", href: site.socials.facebook, Icon: Facebook },
   { label: "Behance", href: site.socials.behance, Icon: Behance },
-  { label: "WhatsApp", href: whatsappLink, Icon: MessageCircle },
+  { label: "WhatsApp", href: whatsappLink, Icon: Whatsapp },
 ];
 
 export function Footer() {
