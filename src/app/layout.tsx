@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
+import { WhatsAppFab } from "@/components/ui/WhatsAppFab";
 import { Toaster } from "@/components/ui/sonner";
 import { site } from "@/lib/site";
 
@@ -51,6 +52,7 @@ export default function RootLayout({
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
+        <WhatsAppFab />
         <Toaster position="bottom-right" richColors />
       </body>
     </html>
