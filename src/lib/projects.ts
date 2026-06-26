@@ -76,7 +76,7 @@ export const projects: Project[] = [
       "A/B Testing",
       "JavaScript",
     ],
-    // TODO: add the live GOJU store URL
+    href: "https://gojushots.com",
   },
   {
     name: "Krumbled Foods",

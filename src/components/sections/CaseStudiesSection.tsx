@@ -18,9 +18,13 @@ export function CaseStudiesSection() {
         subtitle="Premium ecommerce implementation with clearer problems, stronger solutions, and more believable execution detail."
       />
 
-      <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-12 flex flex-wrap justify-center gap-6">
         {projects.map((project, i) => (
-          <Reveal key={project.name} delay={(i % 3) * 80}>
+          <Reveal
+            key={project.name}
+            delay={(i % 3) * 80}
+            className="w-full md:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]"
+          >
             <ProjectCard project={project} />
           </Reveal>
         ))}
