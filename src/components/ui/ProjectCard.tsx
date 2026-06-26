@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowUpRight, ImageIcon, Code2 } from "lucide-react";
+import { ArrowUpRight, ImageIcon, Code2, Check } from "lucide-react";
 import type { Project } from "@/lib/projects";
 
 function PSRBox({ label, children }: { label: string; children: React.ReactNode }) {
@@ -12,8 +12,18 @@ function PSRBox({ label, children }: { label: string; children: React.ReactNode 
 }
 
 export function ProjectCard({ project }: { project: Project }) {
-  const { name, category, image, description, problem, solution, result, stack, href } =
-    project;
+  const {
+    name,
+    category,
+    image,
+    description,
+    problem,
+    highlights,
+    solution,
+    result,
+    stack,
+    href,
+  } = project;
   return (
     <div className="portfolio-card group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-card">
       {/* Screenshot (16:9) */}
@@ -43,10 +53,27 @@ export function ProjectCard({ project }: { project: Project }) {
         <h3 className="text-xl font-semibold leading-snug">{name}</h3>
         <p className="text-sm leading-relaxed text-muted-foreground">{description}</p>
 
-        {/* Problem / Solution / Result — separate boxes */}
+        {/* Challenge / What I built / Result */}
         <div className="mt-1 space-y-3">
-          <PSRBox label="Problem">{problem}</PSRBox>
-          <PSRBox label="Solution">{solution}</PSRBox>
+          <PSRBox label="Challenge">{problem}</PSRBox>
+          {highlights && highlights.length > 0 ? (
+            <div className="rounded-xl border border-border bg-background/40 p-4">
+              <p className="font-semibold">What I built</p>
+              <ul className="mt-2 space-y-1.5">
+                {highlights.map((h) => (
+                  <li
+                    key={h}
+                    className="flex items-start gap-2 text-sm leading-relaxed text-muted-foreground"
+                  >
+                    <Check className="mt-0.5 size-4 shrink-0 text-primary" />
+                    {h}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : (
+            <PSRBox label="Solution">{solution}</PSRBox>
+          )}
           <PSRBox label="Result">{result}</PSRBox>
         </div>
 

@@ -5,6 +5,8 @@ export type Project = {
   image: string | null;
   description: string;
   problem: string;
+  /** optional "what I built" bullets; falls back to `solution` paragraph */
+  highlights?: string[];
   solution: string;
   result: string;
   stack: string[];
@@ -15,19 +17,36 @@ export type Project = {
 // Replace it with the real details (and any real metrics) for each project.
 export const projects: Project[] = [
   {
-    name: "Fyne Skincare",
-    category: "Premium Skincare Brand",
-    image: "/project/fyne.jpg",
+    name: "Adapt Naturals",
+    category: "DTC Supplements · Shopify Plus",
+    // TODO: drop your screenshot at public/project/adapt-naturals.jpg, then set this path
+    image: null,
     description:
-      "A clean, conversion-focused skincare storefront built pixel-perfect from design.",
+      "Full storefront redesign and CRO overhaul for Chris Kresser's premium supplement brand — built to scale DTC revenue through subscriptions, personalized discovery and higher-converting product pages.",
     problem:
-      "The brand had a polished design but needed it translated into a fast, editable Shopify theme without losing any detail.",
+      "A premium supplement brand that needed a higher-converting storefront with a strong subscription model and personalized product discovery to scale DTC revenue.",
+    highlights: [
+      "CRO-driven PDP redesign & customization",
+      "Subscription model + subscription-flow modifications",
+      "Custom quiz app for personalized recommendations",
+      "Cart & bundle upsells built with custom apps",
+      "Product recommendation strategy",
+      "Sales funnels + A/B testing analysis & management",
+    ],
     solution:
-      "Built reusable Shopify 2.0 sections with a refined product and collection experience, matching the design to the pixel.",
+      "Redesigned the store and rebuilt the conversion layer end-to-end — CRO-optimized PDPs, a subscription model with custom flow logic, a custom quiz app for personalized recommendations, cart and bundle upsells via custom apps, and sales funnels managed through ongoing A/B testing.",
     result:
-      "A premium, mobile-first storefront the team can update on their own — delivered on schedule.",
-    stack: ["Shopify 2.0", "Liquid", "Tailwind", "JavaScript"],
-    href: "#",
+      "A faster, conversion-focused storefront with recurring subscription revenue, higher AOV from upsells and bundles, and personalized product discovery that guides customers to the right supplements.",
+    stack: [
+      "Shopify Plus",
+      "Liquid",
+      "Custom Apps",
+      "Subscriptions",
+      "Quiz App",
+      "A/B Testing",
+      "JavaScript",
+    ],
+    href: "https://adaptnaturals.com",
   },
   {
     name: "Two Brothers Organic Farms",
