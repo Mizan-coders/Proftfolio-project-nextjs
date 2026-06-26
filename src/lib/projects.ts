@@ -19,8 +19,7 @@ export const projects: Project[] = [
   {
     name: "Adapt Naturals",
     category: "DTC Supplements · Shopify Plus",
-    // TODO: drop your screenshot at public/project/adapt-naturals.jpg, then set this path
-    image: null,
+    image: "/project/adapt-naturals.jpg",
     description:
       "Full storefront redesign and CRO overhaul for Chris Kresser's premium supplement brand — built to scale DTC revenue through subscriptions, personalized discovery and higher-converting product pages.",
     problem:
@@ -51,8 +50,7 @@ export const projects: Project[] = [
   {
     name: "GOJU Shots",
     category: "Functional Wellness · Shopify",
-    // TODO: drop your screenshot at public/project/goju.jpg, then set this path
-    image: null,
+    image: "/project/goju.jpg",
     description:
       "Figma-to-Shopify build for a New Zealand functional-wellness shots brand — translated the design pixel-perfect and built the full conversion layer for DTC growth.",
     problem:
