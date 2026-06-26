@@ -79,18 +79,32 @@ export const projects: Project[] = [
     // TODO: add the live GOJU store URL
   },
   {
-    name: "Aquaria",
-    category: "Science-Led Beauty Brand",
-    image: "/project/aqueria.jpg",
+    name: "Krumbled Foods",
+    category: "Multi-Niche DTC · Shopify",
+    image: "/project/krumbledfoods.jpg",
     description:
-      "A bold, modern storefront with a strong visual identity and interactive product pages.",
+      "A multi-niche DTC storefront (food + beauty/skincare) with three tailored homepages and a bundle-driven conversion layer.",
     problem:
-      "Off-the-shelf themes couldn't deliver the immersive, brand-forward experience the product deserved.",
+      "A brand spanning multiple product niches — including beauty/skincare — that needed distinct, on-brand experiences for each, plus a higher-converting, bundle-driven storefront.",
+    highlights: [
+      "CRO-driven PDP redesign & customization",
+      "3 custom homepages for 3 niches, cross-linked from the header menu",
+      "Custom bundle app + cart & bundle upsells",
+      "Product recommendation strategy",
+      "Sales funnels + A/B testing analysis & management",
+    ],
     solution:
-      "Built a custom theme with interactive sections and a polished product page tailored to the brand.",
+      "Built three tailored homepages for the brand's different niches (linked from the header on every page), redesigned the PDPs for conversion, and added a custom bundle app powering cart and bundle upsells, plus sales funnels managed through ongoing A/B testing.",
     result:
-      "A distinctive, fast storefront that elevates the brand and supports its merchandising goals.",
-    stack: ["Shopify 2.0", "Liquid", "Tailwind", "JavaScript"],
-    href: "#",
+      "Distinct, on-brand experiences per niche with higher AOV from bundles and upsells, and a conversion-focused storefront the team can scale across categories.",
+    stack: [
+      "Shopify Plus",
+      "Liquid",
+      "Custom Apps",
+      "Bundles",
+      "A/B Testing",
+      "JavaScript",
+    ],
+    href: "https://krumbledfoods.com",
   },
 ];
