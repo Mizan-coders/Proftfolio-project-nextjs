@@ -48,6 +48,35 @@ export const projects: Project[] = [
     href: "https://adaptnaturals.com",
   },
   {
+    name: "Krumbled Foods",
+    category: "Multi-Niche DTC · Shopify",
+    image: "/project/krumbledfoods.jpg",
+    description:
+      "A multi-niche DTC storefront (food + beauty/skincare) with three tailored homepages and a bundle-driven conversion layer.",
+    problem:
+      "A brand spanning multiple product niches — including beauty/skincare — that needed distinct, on-brand experiences for each, plus a higher-converting, bundle-driven storefront.",
+    highlights: [
+      "CRO-driven PDP redesign & customization",
+      "3 custom homepages for 3 niches, cross-linked from the header menu",
+      "Custom bundle app + cart & bundle upsells",
+      "Product recommendation strategy",
+      "Sales funnels + A/B testing analysis & management",
+    ],
+    solution:
+      "Built three tailored homepages for the brand's different niches (linked from the header on every page), redesigned the PDPs for conversion, and added a custom bundle app powering cart and bundle upsells, plus sales funnels managed through ongoing A/B testing.",
+    result:
+      "Distinct, on-brand experiences per niche with higher AOV from bundles and upsells, and a conversion-focused storefront the team can scale across categories.",
+    stack: [
+      "Shopify Plus",
+      "Liquid",
+      "Custom Apps",
+      "Bundles",
+      "A/B Testing",
+      "JavaScript",
+    ],
+    href: "https://krumbledfoods.com",
+  },
+  {
     name: "GOJU Shots",
     category: "Functional Wellness · Shopify",
     image: "/project/goju.jpg",
@@ -77,34 +106,5 @@ export const projects: Project[] = [
       "JavaScript",
     ],
     href: "https://gojushots.com",
-  },
-  {
-    name: "Krumbled Foods",
-    category: "Multi-Niche DTC · Shopify",
-    image: "/project/krumbledfoods.jpg",
-    description:
-      "A multi-niche DTC storefront (food + beauty/skincare) with three tailored homepages and a bundle-driven conversion layer.",
-    problem:
-      "A brand spanning multiple product niches — including beauty/skincare — that needed distinct, on-brand experiences for each, plus a higher-converting, bundle-driven storefront.",
-    highlights: [
-      "CRO-driven PDP redesign & customization",
-      "3 custom homepages for 3 niches, cross-linked from the header menu",
-      "Custom bundle app + cart & bundle upsells",
-      "Product recommendation strategy",
-      "Sales funnels + A/B testing analysis & management",
-    ],
-    solution:
-      "Built three tailored homepages for the brand's different niches (linked from the header on every page), redesigned the PDPs for conversion, and added a custom bundle app powering cart and bundle upsells, plus sales funnels managed through ongoing A/B testing.",
-    result:
-      "Distinct, on-brand experiences per niche with higher AOV from bundles and upsells, and a conversion-focused storefront the team can scale across categories.",
-    stack: [
-      "Shopify Plus",
-      "Liquid",
-      "Custom Apps",
-      "Bundles",
-      "A/B Testing",
-      "JavaScript",
-    ],
-    href: "https://krumbledfoods.com",
   },
 ];
