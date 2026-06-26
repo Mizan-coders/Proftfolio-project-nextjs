@@ -27,7 +27,6 @@ export const reviews: Review[] = [
     name: "James Carter",
     country: "United States",
     flag: "🇺🇸",
-    source: "Fiverr",
   },
   {
     rating: 5,
@@ -38,7 +37,6 @@ export const reviews: Review[] = [
     name: "Sophie Müller",
     country: "Germany",
     flag: "🇩🇪",
-    source: "Fiverr",
   },
   {
     rating: 5,
@@ -49,7 +47,6 @@ export const reviews: Review[] = [
     name: "Liam O'Brien",
     country: "Ireland",
     flag: "🇮🇪",
-    source: "Fiverr",
   },
   {
     rating: 5,
@@ -60,7 +57,6 @@ export const reviews: Review[] = [
     name: "Olivia Bennett",
     country: "United Kingdom",
     flag: "🇬🇧",
-    source: "Fiverr",
   },
   {
     rating: 5,
@@ -71,7 +67,6 @@ export const reviews: Review[] = [
     name: "Noah Williams",
     country: "Canada",
     flag: "🇨🇦",
-    source: "Fiverr",
   },
   {
     rating: 5,
@@ -82,7 +77,6 @@ export const reviews: Review[] = [
     name: "Emma Dubois",
     country: "France",
     flag: "🇫🇷",
-    source: "Fiverr",
   },
   {
     rating: 5,
@@ -93,7 +87,6 @@ export const reviews: Review[] = [
     name: "Lucas Silva",
     country: "Brazil",
     flag: "🇧🇷",
-    source: "Fiverr",
   },
   {
     rating: 5,
@@ -104,7 +97,6 @@ export const reviews: Review[] = [
     name: "Charlotte Nguyen",
     country: "Australia",
     flag: "🇦🇺",
-    source: "Fiverr",
   },
   {
     rating: 5,
@@ -115,7 +107,6 @@ export const reviews: Review[] = [
     name: "Daniel Rossi",
     country: "Italy",
     flag: "🇮🇹",
-    source: "Fiverr",
   },
   {
     rating: 5,
@@ -126,7 +117,6 @@ export const reviews: Review[] = [
     name: "Mia Andersen",
     country: "Denmark",
     flag: "🇩🇰",
-    source: "Fiverr",
   },
   {
     rating: 5,
@@ -137,7 +127,6 @@ export const reviews: Review[] = [
     name: "Ethan Park",
     country: "South Korea",
     flag: "🇰🇷",
-    source: "Fiverr",
   },
   {
     rating: 5,
@@ -148,6 +137,5 @@ export const reviews: Review[] = [
     name: "Isabella García",
     country: "Spain",
     flag: "🇪🇸",
-    source: "Fiverr",
   },
 ];
