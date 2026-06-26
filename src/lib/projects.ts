@@ -49,19 +49,36 @@ export const projects: Project[] = [
     href: "https://adaptnaturals.com",
   },
   {
-    name: "Two Brothers Organic Farms",
-    category: "Organic Ecommerce Brand",
-    image: "/project/two-brothers.jpg",
+    name: "GOJU Shots",
+    category: "Functional Wellness · Shopify",
+    // TODO: drop your screenshot at public/project/goju.jpg, then set this path
+    image: null,
     description:
-      "A storytelling-led storefront for an organic food brand with rich content and merchandising.",
+      "Figma-to-Shopify build for a New Zealand functional-wellness shots brand — translated the design pixel-perfect and built the full conversion layer for DTC growth.",
     problem:
-      "The brand needed a content-rich store that balanced their farm story with a smooth shopping experience.",
+      "A wellness brand with a finished Figma design that needed a pixel-perfect, high-converting Shopify storefront with subscriptions and bundle-driven AOV.",
+    highlights: [
+      "Pixel-perfect Figma → Shopify build",
+      "CRO-driven PDP redesign & customization",
+      "Subscription model + subscription-flow modifications",
+      "Custom bundle app + cart & bundle upsells",
+      "Product recommendation strategy",
+      "Sales funnels + A/B testing analysis & management",
+    ],
     solution:
-      "Developed custom sections for storytelling, recipes and bundles, with flexible merchandising controls.",
+      "Built the store from Figma and rebuilt the conversion layer — CRO-optimized PDPs, a subscription model with custom flow logic, a custom bundle app powering cart and bundle upsells, product recommendations, and sales funnels managed through ongoing A/B testing.",
     result:
-      "An engaging, on-brand storefront that showcases the product range while staying easy to manage.",
-    stack: ["Shopify", "Liquid", "Custom Sections", "JavaScript"],
-    href: "#",
+      "A fast, on-brand storefront with recurring subscription revenue and higher AOV driven by custom bundles and upsells.",
+    stack: [
+      "Figma to Shopify",
+      "Shopify Plus",
+      "Liquid",
+      "Custom Apps",
+      "Subscriptions",
+      "A/B Testing",
+      "JavaScript",
+    ],
+    // TODO: add the live GOJU store URL
   },
   {
     name: "Aquaria",
