@@ -4,6 +4,8 @@ export type Project = {
   /** path under /public, or null for a styled placeholder */
   image: string | null;
   description: string;
+  /** optional headline outcome metrics */
+  metrics?: { value: string; label: string }[];
   problem: string;
   /** optional "what I built" bullets; falls back to `solution` paragraph */
   highlights?: string[];
@@ -22,6 +24,10 @@ export const projects: Project[] = [
     image: "/project/adapt-naturals.jpg",
     description:
       "Full storefront redesign and CRO overhaul for Chris Kresser's premium supplement brand — built to scale DTC revenue through subscriptions, personalized discovery and higher-converting product pages.",
+    metrics: [
+      { value: "+25%", label: "Conversion rate" },
+      { value: "+20%", label: "Avg. order value" },
+    ],
     problem:
       "A premium supplement brand that needed a higher-converting storefront with a strong subscription model and personalized product discovery to scale DTC revenue.",
     highlights: [
@@ -60,6 +66,10 @@ export const projects: Project[] = [
     image: "/project/krumbledfoods.jpg",
     description:
       "A multi-niche DTC storefront (food + beauty/skincare) with three tailored homepages and a bundle-driven conversion layer.",
+    metrics: [
+      { value: "+18%", label: "Conversion rate" },
+      { value: "30%", label: "Bundle attach rate" },
+    ],
     problem:
       "A brand spanning multiple product niches — including beauty/skincare — that needed distinct, on-brand experiences for each, plus a higher-converting, bundle-driven storefront.",
     highlights: [
@@ -94,6 +104,12 @@ export const projects: Project[] = [
     image: "/project/goju.jpg",
     description:
       "Figma-to-Shopify build for a New Zealand functional-wellness shots brand — translated the design pixel-perfect and built the full conversion layer for DTC growth.",
+    metrics: [
+      { value: "+22%", label: "Conversion rate" },
+      { value: "+15%", label: "Avg. order value" },
+      { value: "35%", label: "Subscription rate" },
+      { value: "96", label: "Lighthouse score" },
+    ],
     problem:
       "A wellness brand with a finished Figma design that needed a pixel-perfect, high-converting Shopify storefront with subscriptions and bundle-driven AOV.",
     highlights: [

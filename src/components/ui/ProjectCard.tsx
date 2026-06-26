@@ -17,6 +17,7 @@ export function ProjectCard({ project }: { project: Project }) {
     category,
     image,
     description,
+    metrics,
     problem,
     highlights,
     solution,
@@ -52,6 +53,21 @@ export function ProjectCard({ project }: { project: Project }) {
         </p>
         <h3 className="text-xl font-semibold leading-snug">{name}</h3>
         <p className="text-sm leading-relaxed text-muted-foreground">{description}</p>
+
+        {/* Outcome metrics */}
+        {metrics && metrics.length > 0 && (
+          <div className="grid grid-cols-2 gap-2">
+            {metrics.map((m) => (
+              <div
+                key={m.label}
+                className="rounded-lg border border-primary/20 bg-primary/5 p-3 text-center"
+              >
+                <div className="text-lg font-bold text-primary">{m.value}</div>
+                <div className="mt-0.5 text-xs text-muted-foreground">{m.label}</div>
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* Challenge / What I built / Result */}
         <div className="mt-1 space-y-3">
