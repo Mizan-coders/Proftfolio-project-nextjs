@@ -92,10 +92,12 @@ export const projects: Project[] = [
       "Pixel-perfect Figma → Shopify build",
       "CRO-driven PDP redesign & customization",
       "Subscription model + subscription-flow modifications",
+      "Custom cart drawer implementation",
+      "Free-shipping progress calculator in the cart drawer",
       "Custom bundle app + cart & bundle upsells",
+      "AI-powered product recommendations",
       "Checkout UI extensions to customize the checkout flow",
       "Shopify Functions for bundle discounts & delivery customization",
-      "Product recommendation strategy",
       "Sales funnels + A/B testing analysis & management",
     ],
     solution:
