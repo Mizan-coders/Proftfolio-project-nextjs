@@ -17,6 +17,7 @@ export function ProjectCard({ project }: { project: Project }) {
     category,
     image,
     description,
+    role,
     metrics,
     problem,
     highlights,
@@ -52,6 +53,11 @@ export function ProjectCard({ project }: { project: Project }) {
           {category}
         </p>
         <h3 className="text-xl font-semibold leading-snug">{name}</h3>
+        {role && (
+          <p className="text-sm text-muted-foreground">
+            <span className="font-medium text-foreground">Role:</span> {role}
+          </p>
+        )}
         <p className="text-sm leading-relaxed text-muted-foreground">{description}</p>
 
         {/* Outcome metrics */}

@@ -4,6 +4,8 @@ export type Project = {
   /** path under /public, or null for a styled placeholder */
   image: string | null;
   description: string;
+  /** optional role line, e.g. "Sole Developer — Shopify + CRO" */
+  role?: string;
   /** optional headline outcome metrics */
   metrics?: { value: string; label: string }[];
   problem: string;
@@ -24,6 +26,7 @@ export const projects: Project[] = [
     image: "/project/adapt-naturals.jpg",
     description:
       "Full storefront redesign and CRO overhaul for Chris Kresser's premium supplement brand — built to scale DTC revenue through subscriptions, personalized discovery and higher-converting product pages.",
+    role: "Sole Developer — Shopify + CRO",
     metrics: [
       { value: "+25%", label: "Conversion rate" },
       { value: "+20%", label: "Avg. order value" },
@@ -66,6 +69,7 @@ export const projects: Project[] = [
     image: "/project/krumbledfoods.jpg",
     description:
       "A multi-niche DTC storefront (food + beauty/skincare) with three tailored homepages and a bundle-driven conversion layer.",
+    role: "Sole Developer — Shopify + CRO",
     metrics: [
       { value: "+18%", label: "Conversion rate" },
       { value: "30%", label: "Bundle attach rate" },
@@ -104,6 +108,7 @@ export const projects: Project[] = [
     image: "/project/goju.jpg",
     description:
       "Figma-to-Shopify build for a New Zealand functional-wellness shots brand — translated the design pixel-perfect and built the full conversion layer for DTC growth.",
+    role: "Sole Developer — Shopify + CRO",
     metrics: [
       { value: "+22%", label: "Conversion rate" },
       { value: "+15%", label: "Avg. order value" },
