@@ -34,6 +34,7 @@ export const site = {
   // Headline stats (sourced from CV)
   stats: {
     experience: "10+ yrs",
+    projects: "500+",
     brands: "100+",
     conversion: "30%+",
     shopifyPlus: "Shopify Plus",
