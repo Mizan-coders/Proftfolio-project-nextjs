@@ -183,6 +183,10 @@ export const projects: Project[] = [
     description:
       "Pixel-perfect Figma-to-Shopify build for an Australian outerwear brand — translated the design and built the storefront for DTC growth.",
     role: "Sole Developer — Shopify",
+    metrics: [
+      { value: "+23%", label: "Conversion rate" },
+      { value: "+25%", label: "Avg. order value" },
+    ],
     problem:
       "An apparel brand with a finished Figma design that needed a pixel-perfect, high-converting Shopify storefront built for DTC growth.",
     highlights: [
