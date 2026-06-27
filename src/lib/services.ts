@@ -38,7 +38,7 @@ export const services: Service[] = [
     hasPage: true,
   },
   {
-    title: "Shopify CRO Optimization",
+    title: "Shopify CRO & Conversion",
     short: "Shopify CRO",
     forWho: "For brands that want more revenue from existing traffic",
     description:
