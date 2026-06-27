@@ -204,6 +204,35 @@ export const projects: Project[] = [
     ],
     href: "https://www.rojoouterwear.com.au",
   },
+  {
+    name: "KetoVitals",
+    category: "DTC Supplements · Shopify",
+    image: "/project/ketovitals-2025.jpg",
+    description:
+      "Pixel-perfect Figma-to-Shopify build for a DTC keto supplement brand — translated the design on the Prestige theme and built the storefront for DTC growth.",
+    role: "Sole Developer — Shopify",
+    problem:
+      "A supplement brand with a finished Figma design that needed a pixel-perfect, high-converting Shopify storefront built on the Prestige theme.",
+    highlights: [
+      "Pixel-perfect Figma → Shopify build on the Prestige theme",
+      "Custom Shopify 2.0 sections built from the design",
+      "Conversion-focused PDP & collection pages",
+      "Custom cart & upsell experience",
+      "Mobile-first, performance-focused build",
+    ],
+    solution:
+      "Built the store from Figma on the Prestige theme — pixel-perfect, with custom Shopify 2.0 sections, conversion-focused product and collection pages, and a custom cart and upsell experience.",
+    result:
+      "A fast, on-brand storefront that translates the design faithfully and gives the brand a conversion-ready foundation to scale DTC.",
+    stack: [
+      "Figma to Shopify",
+      "Shopify",
+      "Prestige Theme",
+      "Liquid",
+      "JavaScript",
+    ],
+    href: "https://www.ketovitals.com",
+  },
 ];
 
 /** Lighter project entries (no metrics) shown on the dedicated /work page. */
@@ -222,13 +251,6 @@ export const moreProjects: MiniProject[] = [
     scope: "Full Figma → Shopify migration.",
     stack: ["Figma to Shopify", "Shopify", "Liquid", "Migration"],
     href: "https://proski.com.au",
-  },
-  {
-    name: "KetoVitals",
-    category: "DTC Supplements · Shopify",
-    scope: "Figma → Shopify build.",
-    stack: ["Figma to Shopify", "Shopify", "Liquid"],
-    href: "https://www.ketovitals.com",
   },
   {
     name: "Gentle Habits",
