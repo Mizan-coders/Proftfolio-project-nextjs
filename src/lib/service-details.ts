@@ -9,34 +9,6 @@ export type ServiceDetail = {
 };
 
 export const serviceDetails: Record<string, ServiceDetail> = {
-  "figma-to-shopify": {
-    slug: "figma-to-shopify",
-    title: "Figma to Shopify Theme Development",
-    tagline:
-      "Hand me your approved Figma file and get back a pixel-perfect, fully responsive Shopify 2.0 theme your team can manage.",
-    forWho: [
-      "Agencies with client designs that need faithful implementation",
-      "Ecommerce brands with a finished Figma but no Shopify developer",
-      "Teams that want reusable sections, not a one-off hardcoded theme",
-    ],
-    included: [
-      "Pixel-perfect conversion of every Figma frame",
-      "Shopify 2.0 sections & blocks editable in the theme editor",
-      "Mobile-first, cross-browser responsive markup",
-      "Performance-minded, clean Liquid and JavaScript",
-      "QA across breakpoints and a documented handoff",
-    ],
-    process: [
-      { title: "Design review", desc: "Audit the Figma file, flag gaps, confirm scope and timeline." },
-      { title: "Build", desc: "Develop reusable sections matching the design to the pixel." },
-      { title: "QA & revisions", desc: "Test every breakpoint and refine until it's perfect." },
-      { title: "Handoff", desc: "Deliver a clean, editable theme with launch support." },
-    ],
-    caseSnippet: {
-      name: "Luxe Living — Home & Decor",
-      result: "Launched in 12 days with a 40% faster mobile load.",
-    },
-  },
   "custom-shopify-theme-development": {
     slug: "custom-shopify-theme-development",
     title: "Custom Shopify Theme Development",
@@ -61,8 +33,8 @@ export const serviceDetails: Record<string, ServiceDetail> = {
       { title: "Launch", desc: "Deploy with support and a smooth handoff." },
     ],
     caseSnippet: {
-      name: "NordSupply — B2B Store",
-      result: "25% lift in mobile conversion after the rebuild.",
+      name: "Krumbled Foods",
+      result: "+18% conversion across 3 tailored niche storefronts.",
     },
   },
   "headless-shopify-nextjs": {
@@ -89,8 +61,8 @@ export const serviceDetails: Record<string, ServiceDetail> = {
       { title: "Delivery", desc: "Ship with documentation and ongoing support." },
     ],
     caseSnippet: {
-      name: "Pulse — Headless Storefront",
-      result: "Sub-second navigation and a 30% increase in AOV.",
+      name: "Adapt Naturals",
+      result: "+25% conversion on a headless React storefront.",
     },
   },
 };
