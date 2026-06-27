@@ -57,7 +57,7 @@ export function HeroSection() {
             Senior Shopify Developer · CRO Expert · 10+ Years
           </span>
 
-          <h1 className="text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-7xl">
+          <h1 className="text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
             Shopify Plus Developer &amp; Technical CRO Specialist
             <span className="mt-1 block text-primary">
               for High-Growth DTC Brands
