@@ -7,6 +7,7 @@ import {
   Briefcase,
   HelpCircle,
   MessageSquare,
+  IdCard,
   type LucideIcon,
 } from "lucide-react";
 
@@ -28,6 +29,7 @@ export const navItems: NavItem[] = [
   { label: "Work", href: "/#projects", sectionId: "projects", icon: Briefcase },
   { label: "FAQ", href: "/#faq", sectionId: "faq", icon: HelpCircle },
   { label: "Contact", href: "/#contact", sectionId: "contact", icon: MessageSquare },
+  { label: "About Me", href: "/about", icon: IdCard },
 ];
 
 /** Footer nav links */

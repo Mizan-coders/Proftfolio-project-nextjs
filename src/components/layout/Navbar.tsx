@@ -139,7 +139,8 @@ export function Navbar() {
                     href={item.href}
                     className={cn(
                       "flex items-center gap-1.5 whitespace-nowrap rounded-full border px-3 py-1.5 text-sm transition-colors",
-                      isHome && active === item.sectionId
+                      (isHome && active === item.sectionId) ||
+                        (!item.sectionId && pathname === item.href)
                         ? "border-primary/40 bg-primary/20 text-primary"
                         : "border-border/60 text-muted-foreground hover:border-primary/40 hover:text-foreground"
                     )}
@@ -185,7 +186,8 @@ export function Navbar() {
                     onClick={() => setMobileOpen(false)}
                     className={cn(
                       "flex items-center gap-2 rounded-lg px-3 py-2 text-sm transition-colors",
-                      isHome && active === item.sectionId
+                      (isHome && active === item.sectionId) ||
+                        (!item.sectionId && pathname === item.href)
                         ? "bg-primary/20 text-primary"
                         : "text-muted-foreground hover:text-foreground"
                     )}
