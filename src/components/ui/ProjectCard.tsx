@@ -1,6 +1,6 @@
-import Image from "next/image";
 import { ArrowUpRight, ImageIcon, Code2, Check } from "lucide-react";
 import type { Project } from "@/lib/projects";
+import { ProjectScreenshot } from "@/components/ui/ProjectScreenshot";
 
 function PSRBox({ label, children }: { label: string; children: React.ReactNode }) {
   return (
@@ -28,25 +28,19 @@ export function ProjectCard({ project }: { project: Project }) {
   } = project;
   return (
     <div className="portfolio-card group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-card">
-      {/* Screenshot (16:9) */}
-      <div className="relative aspect-video w-full overflow-hidden border-b border-border bg-muted">
-        {image ? (
-          <Image
-            src={image}
-            alt={`${name} screenshot`}
-            fill
-            sizes="(max-width: 1024px) 100vw, 33vw"
-            className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
-          />
-        ) : (
+      {/* Screenshot (16:9) — click to view full */}
+      {image ? (
+        <ProjectScreenshot src={image} name={name} />
+      ) : (
+        <div className="relative aspect-video w-full overflow-hidden border-b border-border bg-muted">
           <div className="grid h-full w-full place-items-center bg-linear-to-br from-primary/10 via-card to-card text-muted-foreground">
             <div className="flex flex-col items-center gap-2">
               <ImageIcon className="size-7 text-primary/50" />
               <span className="text-xs">Project preview</span>
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
 
       <div className="flex flex-1 flex-col gap-3 p-6">
         <p className="text-xs font-semibold uppercase tracking-widest text-primary">
