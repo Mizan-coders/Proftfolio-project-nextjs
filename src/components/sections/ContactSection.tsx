@@ -1,5 +1,5 @@
 import { Mail, MapPin, MessageSquare } from "lucide-react";
-import { Github, Linkedin, Facebook, Whatsapp } from "@/components/ui/BrandIcons";
+import { Github, Linkedin, Facebook, X as XIcon, Instagram, Whatsapp } from "@/components/ui/BrandIcons";
 import { Reveal } from "@/components/ui/Reveal";
 import { SectionHeading, Hl } from "@/components/ui/SectionHeading";
 import { ContactForm } from "@/components/ui/ContactForm";
@@ -9,6 +9,8 @@ const socials = [
   { label: "GitHub", href: site.socials.github, Icon: Github },
   { label: "LinkedIn", href: site.socials.linkedin, Icon: Linkedin },
   { label: "Facebook", href: site.socials.facebook, Icon: Facebook },
+  { label: "X", href: site.socials.x, Icon: XIcon },
+  { label: "Instagram", href: site.socials.instagram, Icon: Instagram },
 ];
 
 export function ContactSection() {

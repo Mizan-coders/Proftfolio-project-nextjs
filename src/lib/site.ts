@@ -24,6 +24,8 @@ export const site = {
     github: "https://github.com/Mizan-coders",
     linkedin: "https://www.linkedin.com/in/mizanweb/",
     facebook: "https://www.facebook.com/Mizan.coders",
+    x: "https://x.com/Mizan_coders",
+    instagram: "https://www.instagram.com/mizan.coders/",
   },
 
   // Deployment URL (used for SEO / OpenGraph)

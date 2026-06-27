@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
-import { Github, Linkedin, Facebook, Whatsapp } from "@/components/ui/BrandIcons";
+import { Github, Linkedin, Facebook, X as XIcon, Instagram, Whatsapp } from "@/components/ui/BrandIcons";
 import { cn } from "@/lib/utils";
 import { navItems } from "@/lib/nav";
 import { services } from "@/lib/services";
@@ -15,6 +15,8 @@ const socialRail = [
   { label: "GitHub", href: site.socials.github, Icon: Github },
   { label: "LinkedIn", href: site.socials.linkedin, Icon: Linkedin },
   { label: "Facebook", href: site.socials.facebook, Icon: Facebook },
+  { label: "X", href: site.socials.x, Icon: XIcon },
+  { label: "Instagram", href: site.socials.instagram, Icon: Instagram },
 ];
 
 export function Navbar() {
