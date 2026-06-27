@@ -8,6 +8,8 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/ui/Reveal";
 import { site } from "@/lib/site";
 
@@ -105,6 +107,14 @@ export function AboutSection() {
               </div>
             ))}
           </div>
+
+          <Link
+            href="/about"
+            className="mt-6 inline-flex items-center gap-2 rounded-lg border border-primary/30 bg-primary/5 px-5 py-2.5 text-sm font-medium text-primary transition-all hover:border-primary/50 hover:shadow-glow-sm"
+          >
+            View full experience &amp; work history
+            <ArrowRight className="size-4" />
+          </Link>
         </Reveal>
 
         {/* RIGHT GRID */}
