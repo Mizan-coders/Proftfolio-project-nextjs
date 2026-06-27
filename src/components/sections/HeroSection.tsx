@@ -78,7 +78,7 @@ export function HeroSection() {
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
             <StatCard value={site.stats.experience} label="Experience" />
             <StatCard value={site.stats.projects} label="Projects delivered" />
-            <StatCard value={site.stats.brands} label="Brands served" />
+            <StatCard value={site.stats.brands} label="DTC Brands served" />
             <StatCard value={site.stats.conversion} label="Avg. conversion lift" />
           </div>
 
