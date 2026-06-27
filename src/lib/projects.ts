@@ -181,7 +181,7 @@ export const projects: Project[] = [
     category: "Outerwear Apparel · Shopify",
     image: "/project/rojoouterwear-au-2026.jpg",
     description:
-      "Pixel-perfect Figma-to-Shopify build for an Australian outerwear brand — translated the design and built the storefront for DTC growth.",
+      "ROJO Outerwear is a premium, Australian-born snow brand designing technical gear specifically for women — celebrated for flattering longer cuts, vibrant retro-inspired aesthetics and a heavy emphasis on eco-friendly, recycled fabrics. A pixel-perfect Figma-to-Shopify build that translated the design and built the storefront for DTC growth.",
     role: "Sole Developer — Shopify",
     metrics: [
       { value: "+23%", label: "Conversion rate" },
