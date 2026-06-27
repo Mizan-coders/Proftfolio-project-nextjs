@@ -8,6 +8,7 @@ import {
   CopilotIcon,
   ChatGptIcon,
   ShopifyIcon,
+  GraphqlIcon,
 } from "@/components/ui/AiIcons";
 
 const tools: { name: string; Icon: ComponentType<{ className?: string }> }[] = [
@@ -16,6 +17,8 @@ const tools: { name: string; Icon: ComponentType<{ className?: string }> }[] = [
   { name: "GitHub Copilot", Icon: CopilotIcon },
   { name: "ChatGPT", Icon: ChatGptIcon },
   { name: "Shopify CLI", Icon: ShopifyIcon },
+  { name: "Hydrogen", Icon: ShopifyIcon },
+  { name: "GraphQL", Icon: GraphqlIcon },
 ];
 
 export function AIWorkflowSection() {
