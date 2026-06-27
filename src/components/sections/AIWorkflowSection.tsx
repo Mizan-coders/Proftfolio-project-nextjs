@@ -1,13 +1,21 @@
 import { Sparkles } from "lucide-react";
+import type { ComponentType } from "react";
 import { Reveal } from "@/components/ui/Reveal";
 import { Hl } from "@/components/ui/SectionHeading";
+import {
+  ClaudeIcon,
+  CursorIcon,
+  CopilotIcon,
+  ChatGptIcon,
+  ShopifyIcon,
+} from "@/components/ui/AiIcons";
 
-const tools = [
-  "Claude Code",
-  "Cursor",
-  "GitHub Copilot",
-  "ChatGPT",
-  "Shopify CLI",
+const tools: { name: string; Icon: ComponentType<{ className?: string }> }[] = [
+  { name: "Claude Code", Icon: ClaudeIcon },
+  { name: "Cursor", Icon: CursorIcon },
+  { name: "GitHub Copilot", Icon: CopilotIcon },
+  { name: "ChatGPT", Icon: ChatGptIcon },
+  { name: "Shopify CLI", Icon: ShopifyIcon },
 ];
 
 export function AIWorkflowSection() {
@@ -29,12 +37,13 @@ export function AIWorkflowSection() {
           </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            {tools.map((tool) => (
+            {tools.map(({ name, Icon }) => (
               <span
-                key={tool}
-                className="rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-sm font-medium text-primary"
+                key={name}
+                className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/10 px-4 py-2 text-sm font-medium text-primary"
               >
-                {tool}
+                <Icon className="size-4" />
+                {name}
               </span>
             ))}
           </div>
