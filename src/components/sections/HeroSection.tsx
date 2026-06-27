@@ -19,6 +19,16 @@ const badges = [
   "Clean scalable code",
 ];
 
+const brands = [
+  "Adapt Naturals",
+  "Krumbled Foods",
+  "GOJU",
+  "1822 Denim",
+  "Rexaline",
+  "Bellekin",
+  "ROJO",
+];
+
 const featureCards = [
   {
     icon: Hammer,
@@ -125,6 +135,21 @@ export function HeroSection() {
             <span>
               Trusted for fast delivery, white-label collaboration, and clean handoffs.
             </span>
+          </div>
+
+          {/* Brand strip */}
+          <div className="space-y-2">
+            <p className="text-xs font-medium uppercase tracking-wider text-muted-foreground">
+              Worked with leading DTC brands
+            </p>
+            <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-sm font-medium text-foreground/80">
+              {brands.map((b, i) => (
+                <span key={b} className="flex items-center gap-2">
+                  {i > 0 && <span className="text-muted-foreground/40">·</span>}
+                  {b}
+                </span>
+              ))}
+            </div>
           </div>
         </div>
 
