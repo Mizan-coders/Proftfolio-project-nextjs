@@ -30,10 +30,17 @@ export function CaseStudiesSection() {
         ))}
       </div>
 
-      <Reveal className="mt-10 text-center">
+      <Reveal className="mt-10 flex flex-col items-center gap-4">
+        <Link
+          href="/work"
+          className="inline-flex items-center gap-2 rounded-lg border border-primary/30 bg-primary/5 px-6 py-3 font-medium text-primary transition-all hover:border-primary/50 hover:shadow-glow"
+        >
+          View all case studies
+          <ArrowRight className="size-4" />
+        </Link>
         <Link
           href="/#contact"
-          className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+          className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-primary"
         >
           Need similar delivery? Send your project brief
           <ArrowRight className="size-4" />

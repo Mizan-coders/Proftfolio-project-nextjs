@@ -148,3 +148,49 @@ export const projects: Project[] = [
     href: "https://gojushots.com",
   },
 ];
+
+/** Lighter project entries (no metrics) shown on the dedicated /work page. */
+export type MiniProject = {
+  name: string;
+  category: string;
+  scope: string;
+  stack: string[];
+  href?: string;
+};
+
+export const moreProjects: MiniProject[] = [
+  {
+    name: "Zaccha",
+    category: "Shopify · Theme Rebuild",
+    scope: "Mockup → Shopify migration with a full Horizon theme rebuild.",
+    stack: ["Shopify", "Horizon Theme", "Liquid", "Migration"],
+    href: "https://zaccha.com",
+  },
+  {
+    name: "Proski",
+    category: "Figma → Shopify · Migration",
+    scope: "Full Figma → Shopify migration.",
+    stack: ["Figma to Shopify", "Shopify", "Liquid", "Migration"],
+  },
+  {
+    name: "KetoVitals",
+    category: "DTC Supplements · Shopify",
+    scope: "Figma → Shopify build.",
+    stack: ["Figma to Shopify", "Shopify", "Liquid"],
+    href: "https://www.ketovitals.com",
+  },
+  {
+    name: "Rojo Outerwear",
+    category: "Outerwear Apparel · Shopify",
+    scope: "Figma → Shopify build.",
+    stack: ["Figma to Shopify", "Shopify", "Liquid"],
+    href: "https://www.rojoouterwear.com.au",
+  },
+  {
+    name: "Gentle Habits",
+    category: "DTC · Shopify",
+    scope: "Figma → Shopify build.",
+    stack: ["Figma to Shopify", "Shopify", "Liquid"],
+    href: "https://www.gentlehabits.com.au",
+  },
+];
