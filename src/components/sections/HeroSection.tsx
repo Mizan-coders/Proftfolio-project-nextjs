@@ -20,6 +20,7 @@ const badges = [
 ];
 
 const brands = [
+  "Zaccha",
   "Adapt Naturals",
   "Krumbled Foods",
   "GOJU",
