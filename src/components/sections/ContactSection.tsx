@@ -6,11 +6,11 @@ import { ContactForm } from "@/components/ui/ContactForm";
 import { site, whatsappLink } from "@/lib/site";
 
 const socials = [
-  { label: "GitHub", href: site.socials.github, Icon: Github },
   { label: "LinkedIn", href: site.socials.linkedin, Icon: Linkedin },
   { label: "Facebook", href: site.socials.facebook, Icon: Facebook },
-  { label: "X", href: site.socials.x, Icon: XIcon },
   { label: "Instagram", href: site.socials.instagram, Icon: Instagram },
+  { label: "X", href: site.socials.x, Icon: XIcon },
+  { label: "GitHub", href: site.socials.github, Icon: Github },
 ];
 
 export function ContactSection() {
