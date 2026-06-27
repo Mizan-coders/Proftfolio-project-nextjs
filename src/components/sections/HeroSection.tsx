@@ -58,9 +58,9 @@ export function HeroSection() {
           </span>
 
           <h1 className="text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-7xl">
-            Conversion-Focused Shopify Development
+            Shopify Plus Developer &amp; Technical CRO Specialist
             <span className="mt-1 block text-primary">
-              for Agencies, Brands &amp; D2C Growth
+              for High-Growth DTC Brands
             </span>
           </h1>
 
