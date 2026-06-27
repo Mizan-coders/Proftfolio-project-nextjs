@@ -247,17 +247,20 @@ export const projects: Project[] = [
       "Custom collection page built from scratch",
       "Custom product filtering for faster discovery",
       "Custom cart drawer implementation",
+      "Cart upsell app development",
+      "Product recommendation app development",
       "Conversion-focused PDP & mobile-first build",
     ],
     solution:
-      "Redesigned the store on the Prestige theme with a custom collection page, custom product filtering and a custom cart drawer for a smoother end-to-end shopping experience.",
+      "Redesigned the store on the Prestige theme with a custom collection page, custom product filtering and a custom cart drawer, plus custom cart-upsell and product-recommendation apps for higher AOV.",
     result:
-      "A cleaner, faster storefront with easier product discovery and a smoother path to checkout.",
+      "A cleaner, faster storefront with easier product discovery, a smoother path to checkout, and higher AOV from cart upsells and recommendations.",
     stack: [
       "Shopify",
       "Prestige Theme",
       "Liquid",
       "JavaScript",
+      "Custom Apps",
       "Custom Filter",
     ],
     href: "https://craftymixologist.com",
