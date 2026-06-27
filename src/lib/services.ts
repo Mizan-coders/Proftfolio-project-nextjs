@@ -26,8 +26,20 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    title: "CRO & Conversion Optimization",
-    short: "CRO & Conversion",
+    title: "Shopify & Shopify Plus Theme Development",
+    short: "Shopify Theme Dev",
+    forWho: "For brands launching or rebuilding a storefront",
+    description:
+      "Pixel-perfect Figma-to-Shopify builds, custom Shopify 2.0 sections, and 0→1 brand storefronts on Shopify Plus.",
+    href: "/services/custom-shopify-theme-development",
+    slug: "custom-shopify-theme-development",
+    icon: LayoutTemplate,
+    accent: "210 90% 62%",
+    hasPage: true,
+  },
+  {
+    title: "Shopify CRO Optimization",
+    short: "Shopify CRO",
     forWho: "For brands that want more revenue from existing traffic",
     description:
       "Data-driven A/B testing, PDP and funnel optimization, and AOV-boosting upsells — every decision backed by clean analytics.",
@@ -68,18 +80,6 @@ export const services: Service[] = [
     icon: Puzzle,
     accent: "292 80% 66%",
     hasPage: false,
-  },
-  {
-    title: "Shopify & Shopify Plus Theme Development",
-    short: "Shopify Theme Dev",
-    forWho: "For brands launching or rebuilding a storefront",
-    description:
-      "Pixel-perfect Figma-to-Shopify builds, custom Shopify 2.0 sections, and 0→1 brand storefronts on Shopify Plus.",
-    href: "/services/custom-shopify-theme-development",
-    slug: "custom-shopify-theme-development",
-    icon: LayoutTemplate,
-    accent: "210 90% 62%",
-    hasPage: true,
   },
   {
     title: "Headless Shopify (React / Next.js)",
