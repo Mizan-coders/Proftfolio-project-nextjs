@@ -147,6 +147,35 @@ export const projects: Project[] = [
     ],
     href: "https://gojushots.com",
   },
+  {
+    name: "Zaccha",
+    category: "DTC Supplements · Shopify",
+    image: null,
+    description:
+      "Premium immune-health supplement brand built around the patented GPComplex® ingredient — a single hero product backed by 20+ clinical studies and a 20-year track record, aimed at adults 40+. Translated the brand mockup into a fast, trust-led Shopify storefront.",
+    role: "Sole Developer — Shopify",
+    problem:
+      "A science-led immune-health brand with a single hero product and strong credibility assets (clinical studies, 1M+ customers, 20 years in market) needed its mockup turned into a high-trust, conversion-ready Shopify storefront on the Horizon theme — one that communicates the science clearly to an audience of adults 40+.",
+    highlights: [
+      "Mockup → Shopify build, translated pixel-perfect",
+      "Full Shopify Horizon theme rebuild with custom sections",
+      "Single-product PDP structured around the science & credibility story",
+      "Trust & credibility sections — clinical studies, testimonials and proof assets",
+      "Mobile-first, performance-focused build",
+    ],
+    solution:
+      "Rebuilt the Shopify Horizon theme from the brand mockup with custom sections, structuring the single-product PDP around the science and credibility story and surfacing trust assets throughout.",
+    result:
+      "A fast, credibility-first storefront that turns the brand's clinical science and 20-year track record into a clear, conversion-ready buying experience — purpose-built for a single hero product and an audience of adults 40+.",
+    stack: [
+      "Mockup to Shopify",
+      "Shopify",
+      "Horizon Theme",
+      "Liquid",
+      "JavaScript",
+    ],
+    href: "https://zaccha.com",
+  },
 ];
 
 /** Lighter project entries (no metrics) shown on the dedicated /work page. */
@@ -159,13 +188,6 @@ export type MiniProject = {
 };
 
 export const moreProjects: MiniProject[] = [
-  {
-    name: "Zaccha",
-    category: "Shopify · Theme Rebuild",
-    scope: "Mockup → Shopify migration with a full Horizon theme rebuild.",
-    stack: ["Shopify", "Horizon Theme", "Liquid", "Migration"],
-    href: "https://zaccha.com",
-  },
   {
     name: "Proski",
     category: "Figma → Shopify · Migration",

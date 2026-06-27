@@ -19,7 +19,7 @@ export function CaseStudiesSection() {
       />
 
       <div className="mt-12 flex flex-wrap justify-center gap-6">
-        {projects.map((project, i) => (
+        {projects.slice(0, 3).map((project, i) => (
           <Reveal
             key={project.name}
             delay={(i % 3) * 80}
