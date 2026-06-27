@@ -176,6 +176,34 @@ export const projects: Project[] = [
     ],
     href: "https://zaccha.com",
   },
+  {
+    name: "Rojo Outerwear",
+    category: "Outerwear Apparel · Shopify",
+    image: "/project/rojoouterwear-au-2026.jpg",
+    description:
+      "Pixel-perfect Figma-to-Shopify build for an Australian outerwear brand — translated the design and built the storefront for DTC growth.",
+    role: "Sole Developer — Shopify",
+    problem:
+      "An apparel brand with a finished Figma design that needed a pixel-perfect, high-converting Shopify storefront built for DTC growth.",
+    highlights: [
+      "Pixel-perfect Figma → Shopify build",
+      "Custom Shopify 2.0 sections built from the design",
+      "Conversion-focused PDP & collection pages",
+      "Custom cart & upsell experience",
+      "Mobile-first, performance-focused build",
+    ],
+    solution:
+      "Built the store from Figma — pixel-perfect, with custom Shopify 2.0 sections, conversion-focused product and collection pages, and a custom cart and upsell experience.",
+    result:
+      "A fast, on-brand storefront that translates the design faithfully and gives the brand a conversion-ready foundation to scale DTC.",
+    stack: [
+      "Figma to Shopify",
+      "Shopify",
+      "Liquid",
+      "JavaScript",
+    ],
+    href: "https://www.rojoouterwear.com.au",
+  },
 ];
 
 /** Lighter project entries (no metrics) shown on the dedicated /work page. */
@@ -201,13 +229,6 @@ export const moreProjects: MiniProject[] = [
     scope: "Figma → Shopify build.",
     stack: ["Figma to Shopify", "Shopify", "Liquid"],
     href: "https://www.ketovitals.com",
-  },
-  {
-    name: "Rojo Outerwear",
-    category: "Outerwear Apparel · Shopify",
-    scope: "Figma → Shopify build.",
-    stack: ["Figma to Shopify", "Shopify", "Liquid"],
-    href: "https://www.rojoouterwear.com.au",
   },
   {
     name: "Gentle Habits",
