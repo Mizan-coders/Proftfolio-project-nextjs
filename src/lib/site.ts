@@ -21,10 +21,9 @@ export const site = {
 
   // Social links
   socials: {
-    github: "https://github.com/yourusername", // TODO: add your GitHub URL
+    github: "https://github.com/Mizan-coders",
     linkedin: "https://www.linkedin.com/in/mizanweb/",
     facebook: "https://www.facebook.com/Mizan.coders",
-    behance: "https://behance.net/yourusername", // TODO: add your Behance URL
   },
 
   // Deployment URL (used for SEO / OpenGraph)

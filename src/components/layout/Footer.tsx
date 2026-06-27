@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ArrowUp } from "lucide-react";
-import { Github, Linkedin, Facebook, Behance, Whatsapp } from "@/components/ui/BrandIcons";
+import { Github, Linkedin, Facebook, Whatsapp } from "@/components/ui/BrandIcons";
 import { footerNav } from "@/lib/nav";
 import { site, whatsappLink } from "@/lib/site";
 
@@ -10,7 +10,6 @@ const socials = [
   { label: "GitHub", href: site.socials.github, Icon: Github },
   { label: "LinkedIn", href: site.socials.linkedin, Icon: Linkedin },
   { label: "Facebook", href: site.socials.facebook, Icon: Facebook },
-  { label: "Behance", href: site.socials.behance, Icon: Behance },
   { label: "WhatsApp", href: whatsappLink, Icon: Whatsapp },
 ];
 
