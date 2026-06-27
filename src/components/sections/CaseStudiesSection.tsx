@@ -12,7 +12,7 @@ export function CaseStudiesSection() {
         label="Case Studies"
         title={
           <>
-            Selected Builds That Show <Hl>Delivery Quality</Hl>
+            Selected Shopify <Hl>Case Studies</Hl>
           </>
         }
         subtitle="Premium ecommerce implementation with clearer problems, stronger solutions, and more believable execution detail."
