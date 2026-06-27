@@ -150,7 +150,7 @@ export const projects: Project[] = [
   {
     name: "Zaccha",
     category: "DTC Supplements · Shopify",
-    image: null,
+    image: "/project/zaccha-2026.jpg",
     description:
       "Premium immune-health supplement brand built around the patented GPComplex® ingredient — a single hero product backed by 20+ clinical studies and a 20-year track record, aimed at adults 40+. Translated the brand mockup into a fast, trust-led Shopify storefront.",
     role: "Sole Developer — Shopify",
