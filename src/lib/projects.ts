@@ -233,6 +233,35 @@ export const projects: Project[] = [
     ],
     href: "https://www.ketovitals.com",
   },
+  {
+    name: "Crafty Mixologist",
+    category: "Cocktail & Bar · Shopify",
+    image: "/project/craftymixologist-2025.jpg",
+    description:
+      "Prestige-theme store redesign with a custom browsing and cart experience — rebuilt collection pages, filtering and the cart drawer for smoother shopping.",
+    role: "Sole Developer — Shopify",
+    problem:
+      "An existing store that needed a redesign with better product discovery and a smoother cart experience to lift conversion.",
+    highlights: [
+      "Prestige theme-based store redesign",
+      "Custom collection page built from scratch",
+      "Custom product filtering for faster discovery",
+      "Custom cart drawer implementation",
+      "Conversion-focused PDP & mobile-first build",
+    ],
+    solution:
+      "Redesigned the store on the Prestige theme with a custom collection page, custom product filtering and a custom cart drawer for a smoother end-to-end shopping experience.",
+    result:
+      "A cleaner, faster storefront with easier product discovery and a smoother path to checkout.",
+    stack: [
+      "Shopify",
+      "Prestige Theme",
+      "Liquid",
+      "JavaScript",
+      "Custom Filter",
+    ],
+    href: "https://craftymixologist.com",
+  },
 ];
 
 /** Lighter project entries (no metrics) shown on the dedicated /work page. */
