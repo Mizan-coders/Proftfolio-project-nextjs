@@ -60,4 +60,14 @@ export const reviews: Review[] = [
     country: "Australia",
     flag: "🇦🇺",
   },
+  {
+    rating: 5,
+    quote:
+      "Owns our Shopify Plus development end to end — reliable, detail-obsessed and a real asset to the team.",
+    category: "1822 Denim · Shopify Plus",
+    timeAgo: "Recent project",
+    name: "Amily",
+    country: "United States",
+    flag: "🇺🇸",
+  },
 ];
