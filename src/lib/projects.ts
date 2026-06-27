@@ -171,6 +171,7 @@ export const moreProjects: MiniProject[] = [
     category: "Figma → Shopify · Migration",
     scope: "Full Figma → Shopify migration.",
     stack: ["Figma to Shopify", "Shopify", "Liquid", "Migration"],
+    href: "https://proski.com.au",
   },
   {
     name: "KetoVitals",
