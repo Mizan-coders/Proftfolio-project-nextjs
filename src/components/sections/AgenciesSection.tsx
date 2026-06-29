@@ -112,23 +112,29 @@ export function AgenciesSection() {
               </div>
             </div>
 
-            <ol className="mt-5 space-y-3">
+            <ol className="mt-5">
               {steps.map((s, i) => (
-                <li
-                  key={s.title}
-                  className="rounded-xl border border-border bg-background/40 p-4"
-                >
-                  <div className="flex gap-4">
-                    <span className="grid size-9 shrink-0 place-items-center rounded-full bg-primary/10 text-sm font-bold text-primary">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    <div>
-                      <p className="font-semibold">{s.title}</p>
-                      <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                        {s.desc}
-                      </p>
+                <li key={s.title} className="relative pb-3 last:pb-0">
+                  <div className="rounded-xl border border-border bg-background/40 p-4">
+                    <div className="flex gap-4">
+                      <span className="grid size-9 shrink-0 place-items-center rounded-full bg-primary/10 text-sm font-bold text-primary">
+                        {String(i + 1).padStart(2, "0")}
+                      </span>
+                      <div>
+                        <p className="font-semibold">{s.title}</p>
+                        <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                          {s.desc}
+                        </p>
+                      </div>
                     </div>
                   </div>
+                  {/* connector — runs from this number to the next, no overshoot */}
+                  {i < steps.length - 1 && (
+                    <span
+                      aria-hidden
+                      className="absolute left-8.5 top-13 h-[calc(100%-2.25rem)] w-px -translate-x-1/2 bg-primary/40"
+                    />
+                  )}
                 </li>
               ))}
             </ol>
