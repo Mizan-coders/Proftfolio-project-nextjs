@@ -169,10 +169,18 @@ export default function AboutPage() {
       {/* Work history */}
       <section className="mt-16">
         <h2 className="text-2xl font-bold">Work history</h2>
-        <ol className="mt-6 space-y-5 border-l border-border pl-8">
-          {history.map((h) => (
-            <li key={h.period} className="relative">
-              <span className="absolute left-[-2.15rem] top-1.5 size-3 rounded-full border-2 border-primary bg-background" />
+        <ol className="mt-6">
+          {history.map((h, i) => (
+            <li key={h.period} className="relative pl-8 pb-6 last:pb-0">
+              {/* connector line — runs from this dot to the next */}
+              {i < history.length - 1 && (
+                <span
+                  aria-hidden
+                  className="absolute left-1.5 top-3 h-full w-px -translate-x-1/2 bg-border"
+                />
+              )}
+              {/* dot — centered on the line */}
+              <span className="absolute left-1.5 top-1.5 size-3 -translate-x-1/2 rounded-full border-2 border-primary bg-background" />
               <p className="text-sm text-primary">{h.period}</p>
               <p className="font-semibold">{h.role}</p>
               <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
